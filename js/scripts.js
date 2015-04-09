@@ -18,3 +18,22 @@ function wordOrder(input_words) {
 
   return occurances_sorted;
 }
+
+$(document).ready(function() {
+  $("form#word-order").submit(function(event) {
+
+    var string = $("#word").val();
+    var ordered = wordOrder(string);
+
+    var output = "";
+    ordered.forEach(function(word) {
+      output += "<p>" + word + "</p>";
+    });
+    
+    $("#words").append(output);
+
+
+
+  event.preventDefault();
+  });
+});
