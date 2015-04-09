@@ -19,5 +19,12 @@ describe('wordOrder', function() {
     expect(wordOrder('I love my dog love')).to.eql(["love", "I", "my", "dog"]);
   });
 
+  it('takes an "I love my dog love" for input and returns ["love", "I", "my", "dog"]', function() {
+    expect(wordOrder('I love my dog love')).to.eql(["love", "I", "my", "dog"]);
+  });
+
+  it('takes an "programming is fun fun programming" for input and returns ["programming", "fun", "is", "block"]', function() {
+    expect(wordOrder('programming is fun fun programming block')).to.eql(["programming", "fun", "is", "block"]);
+  });
 
 });

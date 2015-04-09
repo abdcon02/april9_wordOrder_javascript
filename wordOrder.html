@@ -2,9 +2,32 @@
 
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Word Order</title>
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <h1>Enter your words please</h1>
 
+        <div class="col-md-12">
+          <form id="word-order">
+            <div class="form-group">
+              <label for="word">Enter your sentence:</label>
+              <input type="text" id="word">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <div id="results" class="col-md-12">
+          <p>
+            Your words are<span id="words"></span>
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
